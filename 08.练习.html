@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        div.bg {
+            height: 500px;
+            background-color: #F5F5F5;
+            padding : 1px;
+        }
+        div.box {
+            width: 230px;
+            height: 260px;
+            background-color: #fff;
+            margin: 100px auto;
+            position: relative;
+            transition: all 1s;
+            overflow: hidden;
+        }
+
+        div.box:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            top: -2px;
+        }
+
+        div.move {
+            height: 30%;
+            width: 230px;
+            background-color: #F87300;
+            /* 使用绝对定位 默认宽度会失效 */
+            position: absolute;
+            bottom:-30%;
+            transition: all .2s;
+        }
+
+        div.box:hover .move{
+            bottom: 0;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="box">
+            <div class="move">
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
